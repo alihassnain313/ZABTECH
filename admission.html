@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,12 +19,12 @@
         </a>
 
         <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="admission.html">Admission</a>
-    <a href="contact.html">Contact</a>
-</nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
     </div>
 </header>
@@ -134,7 +133,10 @@
             </div>
 
 
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST" id="admissionForm">
+
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="84dcda36-5c07-45c5-be48-136fb9a94024">
 
                 <div class="form-row">
 
@@ -147,6 +149,7 @@
                         <input
                             type="text"
                             id="name"
+                            name="Full Name"
                             placeholder="Enter your full name"
                             required
                         >
@@ -163,6 +166,7 @@
                         <input
                             type="text"
                             id="father"
+                            name="Father Name"
                             placeholder="Enter father's name"
                             required
                         >
@@ -183,6 +187,7 @@
                         <input
                             type="email"
                             id="email"
+                            name="Email"
                             placeholder="Enter your email"
                             required
                         >
@@ -199,6 +204,7 @@
                         <input
                             type="tel"
                             id="phone"
+                            name="Phone"
                             placeholder="Enter phone number"
                             required
                         >
@@ -214,33 +220,33 @@
                         Select Course
                     </label>
 
-                    <select id="course" required>
+                    <select id="course" name="Selected Course" required>
 
                         <option value="">
                             Choose a course
                         </option>
 
-                        <option value="dit">
+                        <option value="Diploma in Information Technology">
                             Diploma in Information Technology
                         </option>
 
-                        <option value="web">
+                        <option value="Web Development">
                             Web Development
                         </option>
 
-                        <option value="graphic">
+                        <option value="Graphic Design">
                             Graphic Design
                         </option>
 
-                        <option value="office">
+                        <option value="Office Management">
                             Office Management
                         </option>
 
-                        <option value="marketing">
+                        <option value="Digital Marketing">
                             Digital Marketing
                         </option>
 
-                        <option value="digital">
+                        <option value="Digital Skills">
                             Digital Skills
                         </option>
 
@@ -258,6 +264,7 @@
                     <input
                         type="text"
                         id="education"
+                        name="Last Qualification"
                         placeholder="e.g. Matric, Intermediate"
                         required
                     >
@@ -273,6 +280,7 @@
 
                     <textarea
                         id="message"
+                        name="Additional Message"
                         rows="5"
                         placeholder="Write any additional information..."
                     ></textarea>
@@ -383,7 +391,6 @@
     </div>
 
 </footer>
-
 
 </body>
 </html>
